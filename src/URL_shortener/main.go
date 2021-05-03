@@ -157,6 +157,7 @@ func ShortenHandler(w http.ResponseWriter, r *http.Request, mock ...interface{})
 	err := saveToFile(*totalIndex, longURL)
 	if err != nil {
 		http.Error(w, "unable to save URL", http.StatusInternalServerError)
+		return
 	}
 	shortURL := indexToShortURL(*totalIndex)
 	(*totalIndex)++
