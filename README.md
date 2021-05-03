@@ -10,6 +10,7 @@ Inside the src/URL_shortener folder, there is a file savedURLs.csv. This file mu
 Open your terminal and navigate it to the src/URL_shortener folder (it contains the file main.go).
 
 Build the program using
+
 $ go build main.go
 
 Then run the compiled executable.
